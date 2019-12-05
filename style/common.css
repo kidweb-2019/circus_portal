@@ -10849,7 +10849,6 @@ header .menu li {
 }
 
 header .menu li a {
-  text-decoration: none;
   color: #707070;
   margin: 0 auto;
 }
@@ -10859,10 +10858,6 @@ header .menu li a {
   height: 510px;
   margin: 0 auto;
   border: solid black;
-}
-
-.columns {
-  align-items: center;
 }
 
 .box {
