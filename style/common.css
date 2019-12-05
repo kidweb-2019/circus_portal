@@ -10826,29 +10826,32 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  margin: 0;
-  background: no-repeat url(../image/header.png);
+  text-align: center;
+  background-image: url(../image/header.png);
   display: flex;
   justify-content: flex-end;
 }
 
 header .menu {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 header .menu li {
   width: 150px;
-  height: 60px;
-  text-align: center;
+  height: 50px;
   list-style: none;
   background-color: #FFFFFF;
   border-radius: 11px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
 }
 
 header .menu li a {
   text-decoration: none;
   color: #707070;
+  margin: 0 auto;
 }
 
 .block {
@@ -10866,4 +10869,29 @@ header .menu li a {
   max-width: 25%;
   height: 190px;
   border: solid black;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background-color: #743F00;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .menu {
+  display: flex;
+  justify-content: center;
+}
+
+footer .menu li {
+  width: 150px;
+  text-align: center;
+  list-style: none;
+}
+
+footer .menu li a {
+  text-decoration: none;
+  color: #FFFFFF;
 }

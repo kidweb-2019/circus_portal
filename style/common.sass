@@ -38,27 +38,30 @@ header
     top: 0
     left: 0
     width: 100%
-    margin: 0
-    background: no-repeat url(../image/header.png)
+    text-align: center
+    background-image: url(../image/header.png)
     display: flex
     justify-content: flex-end
 
+
     .menu
         display: flex
-        justify-content: center
+        align-items: center
 
         li
             width: 150px
-            height: 60px
-            text-align: center
+            height: 50px
             list-style: none
             background-color: #FFFFFF
             border-radius: 11px
+            display: flex
+            align-items: center
+            margin: 20px
 
             a
                 text-decoration: none
                 color: #707070
-
+                margin: 0 auto
 .block
     max-width: 100%
     height: 510px
@@ -71,3 +74,24 @@ header
     max-width: (100% / 4) * 1
     height: 190px
     border: solid black
+
+footer
+    width: 100%
+    height: 50px
+    margin: 0
+    background-color: #743F00
+    display: flex
+    justify-content: space-around
+
+    .menu
+        display: flex
+        justify-content: center
+
+        li
+            width: 150px
+            text-align: center
+            list-style: none
+
+            a
+                text-decoration: none
+                color: #FFFFFF
