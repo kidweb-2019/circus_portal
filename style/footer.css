@@ -1,0 +1,24 @@
+footer {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background-color: #743F00;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .menu {
+  display: flex;
+  justify-content: center;
+}
+
+footer .menu li {
+  width: 150px;
+  text-align: center;
+  list-style: none;
+}
+
+footer .menu li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
