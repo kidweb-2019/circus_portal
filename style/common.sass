@@ -1,73 +1,33 @@
 @charset "utf-8"
 @import "../node_modules/bulma/bulma.sass"
 
-.container
-    max-width: 1366px
+// 変数周り
+$headline: #743F00
+$primary: #DC4B42
+$info: #14BCCC
+$text: #707070
 
-    p 
-        font-size: 1rem
-        color: #707070
+p 
+    font-size: 1rem
+    color: #707070
 
-    h1
-    // 使い方  : ページのタイトルになる要素（Cast, Prefomanceなど）に使用する
-        font-size: 1.5rem
-        color: $primary
+h1
+// 使い方  : ページのタイトルになる要素（Cast, Prefomanceなど）に使用する
+// もしくは大見出し（記事の題名）
+    font-size: 1.5rem
+    color: $primary or $headline
 
-    h2
-    // 使い方 : Cast内だと人名など
-        font-size: 1.25rem（bold）
-        color: $text
+h2
+// 使い方 : Cast内だと人名など
+    font-size: 1.25rem（bold）
+    color: $text
 
-    // 補助テキスト
-    // 使い方 : 記事一覧のタグ名、カテゴリ名など
-        font-size: 0.75rem
-        color: $text
+// 補助テキスト
+// 使い方 : 記事一覧のタグ名、カテゴリ名など
+    // font-size: 0.75rem
+    // color: $text
 
-    a
-        font-size: 1.25rem
-        color: $text
-    // 文字装飾 : デフォルトのまま
-
-    // 変数周り
-    $primary: #DC4B42
-    $info: #14BCCC
-    $text: #707070
-
-header
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    margin: 0
-    background: no-repeat url(../image/header.png)
-    display: flex
-    justify-content: flex-end
-
-    .menu
-        display: flex
-        justify-content: center
-
-        li
-            width: 150px
-            height: 60px
-            text-align: center
-            list-style: none
-            background-color: #FFFFFF
-            border-radius: 11px
-
-            a
-                text-decoration: none
-                color: #707070
-
-.block
-    max-width: 100%
-    height: 510px
-    margin: 0 auto
-    border: solid black
-
-.columns
-    align-items: center
-.box
-    max-width: (100% / 4) * 1
-    height: 190px
-    border: solid black
+a
+    font-size: 1.25rem
+    color: $text
+// 文字装飾 : デフォルトのまま
