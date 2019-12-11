@@ -1,12 +1,150 @@
+.container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.container .flex {
+  display: flex;
+}
+
+.container .left {
+  text-align: left;
+}
+
+.container .right {
+  text-align: right;
+}
+
+.container .alignment {
+  text-align: left;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .alignment .marker {
+  display: flex;
+  align-items: center;
+}
+
+.container .alignment .marker img {
+  width: 25px;
+}
+
+.container .alignment .archives {
+  font-size: 1rem;
+}
+
+.container h1, .container h2, .container h3 {
+  align-items: center;
+  text-align: left;
+}
+
+.container h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #743F00;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #743F00;
+}
+
+.container h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #707070;
+}
+
+.container p {
+  font-size: 1rem;
+  color: #707070;
+}
+
 .block {
-  max-width: 100%;
+  width: 100%;
   height: 510px;
   margin: 0 auto;
   border: solid black;
 }
 
-.box {
-  max-width: 25%;
+article {
+  justify-content: space-around;
+  min-width: 1077px;
+}
+
+article .box {
+  max-width: 250px;
   height: 190px;
   border: solid black;
+  padding: 10px;
+}
+
+article .box p:nth-of-type(1) a,
+article .box p:nth-of-type(3) a {
+  font-size: 0.75rem;
+  color: #707070;
+}
+
+article .box p:nth-of-type(1) a:nth-of-type(2),
+article .box p:nth-of-type(3) a:nth-of-type(2) {
+  margin: 0 15px;
+}
+
+article .box p:nth-of-type(2) a {
+  font-size: 1.25rem;
+  color: #707070;
+}
+
+article .box p:nth-of-type(2) {
+  margin-bottom: 4rem;
+  line-height: 3rem;
+}
+
+.article-link {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 689px) {
+  .container {
+    width: 100%;
+  }
+  .container .alignment {
+    text-align: center;
+  }
+  .container .alignment .marker {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .container h1, .container h2, .container h3 {
+    align-items: center;
+    text-align: center;
+  }
+  .container .block {
+    width: 100%;
+    height: 510px;
+    margin: 0 auto;
+    border: solid black;
+    padding: 0 20px;
+  }
+  .container article {
+    min-width: 100%;
+  }
+  .container article .box {
+    max-width: 250px;
+    height: 190px;
+    border: solid black;
+    margin: 20px auto;
+  }
+  .container article .box p:nth-of-type(1) a,
+  .container article .box p:nth-of-type(3) a {
+    font-size: 0.75rem;
+    color: #707070;
+  }
+  .container article .box p:nth-of-type(2) a {
+    font-size: 1.25rem;
+    color: #707070;
+  }
 }
