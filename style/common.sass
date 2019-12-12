@@ -1,6 +1,7 @@
 @charset "utf-8"
 @import "../node_modules/bulma/bulma.sass"
 
+<<<<<<< Updated upstream
 .container
     max-width: 1366px
 
@@ -71,3 +72,66 @@ header
     max-width: (100% / 4) * 1
     height: 190px
     border: solid black
+=======
+// 変数周り
+$headline: #743F00
+$primary: #DC4B42
+$info: #14BCCC
+$text: #707070
+
+// メインコンテンツレイアウト
+.contents-box
+    max-width: 1100px
+    width: 100%
+
+    h1
+        align-items: center
+        text-align: left
+        font-size: 1.75rem
+        font-weight: bold
+        color: $primary
+.list-box-main
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.list-box
+    border: 1px solid $text
+    max-width: 250px
+    height: 180px
+    margin: .5rem 0
+main
+    margin-top: 120px
+
+p 
+    font-size: 1rem
+    color: #707070
+
+h1
+// 使い方  : ページのタイトルになる要素（Cast, Prefomanceなど）に使用する
+// もしくは大見出し（記事の題名）
+    font-size: 1.5rem
+    color: $primary or $headline
+.container
+    h1
+        margin-bottom: 2rem
+.performance
+    background-image: url("../image/performance_icon.png")
+    background-repeat: no-repeat
+    background-position: center
+    padding-top: 100px
+
+h2
+// 使い方 : Cast内だと人名など
+    font-size: 1.25rem（bold）
+    color: $text
+
+// 補助テキスト
+// 使い方 : 記事一覧のタグ名、カテゴリ名など
+    // font-size: 0.75rem
+    // color: $text
+
+a
+    font-size: 1.25rem
+    color: $text
+// 文字装飾 : デフォルトのまま
+>>>>>>> Stashed changes
